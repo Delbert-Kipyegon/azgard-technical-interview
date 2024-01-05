@@ -28,9 +28,10 @@ function App() {
 
   return (
     <>
-    {/* left side  */}
-    <div className="full border-8 border-black h-full font-raleway  m-10 rounded-3xl grid grid-cols-2 ">
-      <div className="left p-10  ">
+   
+    <div className="full border-8 border-black h-full font-raleway  m-10 rounded-3xl grid md:grid-cols-2 ">
+       {/* left side  */}
+      <div className="left p-10 hidden sm:block ">
           <div className="logo text-xl mb-auto font-extrabold flex flex-start gap-3 font-raleway "> <PiSirenFill className='text-3xl text-red-600 ' /> SmartPOS</div>
           <div className="img flex flex-col justify-center items-center text-center mt-20">
             <img src={`${data[currentIndex].image}`} alt="form-img" />
@@ -39,7 +40,7 @@ function App() {
       </div>
 
       {/* right side  */}
-      <div className="right p-10  bg-gray-100 rounded-r-xl  flex flex-col justify-center items-center  ">
+      <div className="right p-10  bg-gray-100 rounded-xl  md:rounded-r-xl  flex flex-col justify-center items-center  ">
 
         {/* form  */}
         <div className="form my-auto ">
